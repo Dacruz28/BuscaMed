@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.icone-inicial{
+    width: 200px;
+    height: 35px;  
+}
+.icone-segundario{
+    width: 150px;
+    height: 40px;  
+    border-radius: 50px;
+
+}
+
+.bg-custom{
+    background-color: #CD3333;
+}
+
+.navbar-expand-lg{
+    display: flex;
+    justify-content: space-between;
+}
+
+a.nav-link{
+    color: #ccc;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+a.nav-link:hover{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+
+a.nav-link.active.bg-custom{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+
+
+
