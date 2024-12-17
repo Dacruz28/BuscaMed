@@ -47,3 +47,153 @@ a.nav-link.active.bg-custom{
 
 
 
+section.img{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+
+section .container{
+    width: 100%;
+}
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #B25842;
+    font-weight: 400;
+}
+
+.categoria{
+    color: #3c3c3c;
+}
+
+.img-icones{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    gap: 10px; 
+    align-items: center;
+    padding-bottom: 70px;
+
+}
+
+.icone{
+    text-align: center;
+    color: #5f5f5f;
+    font-size: 1.2rem;
+}
+.img-icones img{
+    padding-bottom: 5px;
+}
+
+
+
+/* cards */
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; 
+    padding-bottom: 70px;
+}
+
+.cad{
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(59, 59, 59, 0.20); 
+
+}
+
+.cad img{
+    width: 100%;
+}
+
+.cad h2,p{
+    text-align: center;
+}
+.cad h2{
+    color: #CD3333;
+    font-size: 1.5rem;
+
+}
+
+.cad button{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #CD3333;
+    color: #fff;
+    border: #CD3333;
+}
+
+
+.footer{
+    width: 100%;
+    height: 33vw;
+    background-image:linear-gradient(to right, #CD3333, #DC2424,#E41C1C,#EC1211,#FB0303 )  ;
+    padding: 50px 20px 30px 20px; /* 10px no topo, 20px à direita, 30px embaixo, 40px à esquerda */
+    align-items: center;
+}
+
+.itens-footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding-bottom: 30px;
+    border-bottom: 1px solid #E14C48;
+
+}
+
+.busca p{
+    width: 87%;
+    text-align: left;
+    color: #ccc;
+    padding-top: 13px;
+}
+
+.liks h3{
+    color: #fff;
+    text-align: left;
+    padding-bottom: 5px;
+    
+}
+
+.liks p{
+    color: #fff;
+    text-align: left;
+    margin: 8px;
+}
+
+
+.siga h3{
+    color: #fff;
+    text-align: left;
+    padding-bottom: 5px;
+}
+
+
+.baixe h3{
+    color: #fff;
+}
+
+.baixe p{
+    color: #fff;
+    text-align: left;
+}
+
+
+.direitos{
+    color: #E88D8F;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
