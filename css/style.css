@@ -1,11 +1,12 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;    
+    text-decoration: none;
+
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-evenly;
+.a{
+    text-decoration: none;
 }
 
 .icone-inicial{
@@ -16,17 +17,13 @@
     width: 150px;
     height: 40px;  
     border-radius: 50px;
-
 }
 
 .bg-custom{
     background-color: #CD3333;
 }
 
-.navbar-expand-lg{
-    display: flex;
-    justify-content: space-between;
-}
+
 
 a.nav-link{
     color: #ccc;
@@ -61,6 +58,11 @@ section .container{
     width: 100%;
 }
 
+.img img{
+    width: 100%;
+    height: auto;
+}
+
 .itens{
     display: flex;
     flex-direction: row;
@@ -73,6 +75,15 @@ section .container{
     font-size: 1.2rem;
     color: #B25842;
     font-weight: 400;
+}
+
+.b{
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: #5c5c5c;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+
 }
 
 .categoria{
@@ -110,20 +121,25 @@ section .container{
 .cad{
     border: 1px solid #ccc;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(59, 59, 59, 0.20); 
-
+    box-shadow: 0 0 10px rgba(59, 59, 59, 0.20);
 }
 
 .cad img{
     width: 100%;
 }
 
-.cad h2,p{
+.cad p{
     text-align: center;
+    font-size: 0.9rem;
+    color: #5c5c5c;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+
 }
 .cad h2{
     color: #CD3333;
     font-size: 1.5rem;
+    text-align: center;
 
 }
 
@@ -136,13 +152,25 @@ section .container{
     border: #CD3333;
 }
 
+.img-card{
+    width: 100%;
+    height: 300px;
+}
+
+.card-footer {
+    width: 100%;
+    padding: 0 10px;
+    margin-top: auto; 
+}
 
 .footer{
     width: 100%;
-    height: 33vw;
+    height: 100%;
     background-image:linear-gradient(to right, #CD3333, #DC2424,#E41C1C,#EC1211,#FB0303 )  ;
     padding: 50px 20px 30px 20px; /* 10px no topo, 20px à direita, 30px embaixo, 40px à esquerda */
     align-items: center;
+    font-family: "Poppins", serif;
+
 }
 
 .itens-footer{
@@ -191,9 +219,258 @@ section .container{
     text-align: left;
 }
 
+.play{
+    width: 200px;
+    
+}
+
+
 
 .direitos{
-    color: #E88D8F;
+    color: #f1b3b4;
     padding-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Poppins", serif;
+    text-align: center;
 }
+
+
+
+
+@media (min-width: 1200px) {
+    .cad{
+        display: flex;
+        flex-direction: column;     
+    }
+}
+
+
+
+
+@media (min-width: 991px) {
+    .nav-link.a{
+        display: none;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .img-icones {
+        grid-template-columns: repeat(4, 1fr);  
+    }
+
+    .cards {
+        grid-template-columns: 1fr 1fr; 
+    }
+
+    .ms-auto.a{
+        display: none;
+    }
+    .navbar-toggler {
+        margin-left: auto; 
+    }
+    
+
+
+}
+
+@media (max-width: 650px) {
+    .img-icones {
+        grid-template-columns: 1fr 1fr;  
+    }
+    
+    .cards {
+        grid-template-columns: 1fr;  
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 70px;
+    }
+
+    .cad {
+        width: 100%;  
+    }
+
+    .footer {
+        height: auto; 
+
+    }
+
+    .itens-footer {
+        grid-template-columns: 1fr; 
+    }
+
+    .med{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .busca p{
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .liks h3{
+        text-align: center;
+    }
+
+    .liks p{
+        text-align: center;
+    }
+    
+    .siga h3{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .siga img{
+        width: 40px;
+        height: 40px;
+    }
+    .redes{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .baixe h3{
+        text-align: center;
+    }
+
+    .baixe p{
+        text-align: center;
+    }
+
+    .baixar{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .img img{
+        content: url(../img/B1.png);
+    }
+}
+
+@media (min-width: 651px) {
+    .img {
+        content: url(../img/b2.png);
+    }
+}
+
+
+@media (max-width: 430px) {
+    .cards {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 30px;  
+    }
+
+    .cad {
+        width: 100%;  
+    }
+
+    .cad h2 {
+        font-size: 1.2rem;  
+    }
+
+    .cad p {
+        font-size: 0.8rem;  
+    }
+
+    .cad button {
+        font-size: 0.8rem; 
+    }
+
+    .img-icones {
+        grid-template-columns: 1fr 1fr; 
+        gap: 10px;
+        padding-bottom: 40px;
+    }
+
+    .img img {
+        width: 100%;  
+        height: auto;
+    }
+
+    .navbar-toggler {
+        margin-left: auto; 
+    }
+
+    .ms-auto.a {
+        display: none; 
+    }
+
+    .footer {
+        height: auto; 
+        padding: 20px; 
+    }
+
+    .itens-footer {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+
+    .busca p {
+        width: 100%;
+        text-align: center; 
+    }
+
+    .liks h3 {
+        text-align: center;
+    }
+
+    .liks p {
+        text-align: center;
+    }
+
+    .siga h3 {
+        text-align: center;  
+    }
+
+    .siga img {
+        width: 35px; 
+        height: 35px;
+    }
+
+    .baixe h3 {
+        text-align: center; 
+    }
+
+    .baixe p {
+        text-align: center;  
+    }
+
+    .baixar {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .redes {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .play {
+        width: 150px; 
+    }
+}
+
