@@ -41,8 +41,31 @@ a.nav-link.active.bg-custom{
     color: #fff;
     border-bottom: 2px solid #fff;
 }
+/* 
+.text{
+    color: #247565;
+    font-weight: bold;
+    background-color: #FFD601;
+    border: none;
+    border-radius: 20px;
+}
 
+.text:hover{
+    background-color: #f3cb03;
 
+}
+
+.bnt{
+    width: 100px;
+    padding: 7px 15px 7px 15px; 
+    background-color: #FFD601;
+    border-radius: 20px;
+}
+
+.bnt:hover{
+    background-color: #f3cb03;
+}
+ */
 
 section.img{
     display: flex;
@@ -68,6 +91,17 @@ section .container{
     flex-direction: row;
     justify-content: space-between;
     padding-bottom: 10px;
+}
+
+.itens p{
+    transition: 0.5s;
+    font-family: "Poppins", serif;
+
+}
+
+.itens p:hover{
+    border-bottom: 1px solid #B25842;
+    font-size: 1.3rem;
 }
 
 .a{
@@ -104,6 +138,11 @@ section .container{
     color: #5f5f5f;
     font-size: 1.2rem;
 }
+
+.icone:hover{
+    background-color: #eee;
+}
+
 .img-icones img{
     padding-bottom: 5px;
 }
