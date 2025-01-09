@@ -215,3 +215,10 @@ section .container{
     background-color: #CD3333;
     margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+    .cards{
+        display: flex;
+        flex-direction: column;
+    }
+}

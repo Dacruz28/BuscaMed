@@ -152,3 +152,112 @@ section .container{
 .img-icones img{
     padding-bottom: 5px;
 }
+
+
+
+/* itens */
+
+.content{
+    padding-top: 50px ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.text{
+    width: 500px;
+    text-align: start;
+}
+.text h2{
+    color: #CD3333;
+}
+p{
+    font-size: 1rem;
+}
+
+.cards{
+    padding-top: 70px;
+    width: 100%;
+
+}
+
+.cads{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.card1{
+    width: 350px;   
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card1 h5, p{
+    text-align: center;
+}
+
+.card1 p{
+    font-size: 0.9rem;
+}
+
+.card1 h5{
+    color: #CD3333;
+}
+
+.card1 .img{
+    border: 1px solid #3c3c3c ;
+    width: 200px;
+    height: 200px;
+}
+
+.card2{
+    width: 350px;   
+    background-color: #eee;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card2 h5, p{
+    text-align: center;
+}
+
+.card2 p{
+    font-size: 0.9rem;
+}
+
+.card2 h5{
+    color: #CD3333;
+}
+
+.text2{
+    text-align: center;
+}
+
+.card2 .img{
+    border: 1px solid #3c3c3c ;
+    width: 200px;
+    height: 200px;
+}
+
+
+/* footer */
+.footer-container{
+    background-color: #CD3333;
+    padding: 25px;
+}
+
+.text3{
+    color: #fff;
+    text-align: center;
+}
+
