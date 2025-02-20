@@ -189,6 +189,8 @@ p{
     width: 100%;
     justify-content: space-around;
     align-items: center;
+    padding-top: 50px;
+
 }
 .card1{
     width: 350px;   
@@ -252,12 +254,74 @@ p{
 
 /* footer */
 .footer-container{
-    background-color: #CD3333;
+    background-image:linear-gradient(to right, #CD3333, #DC2424,#E41C1C,#EC1211,#FB0303 )  ;
     padding: 25px;
 }
 
 .text3{
     color: #fff;
     text-align: center;
+}
+h2,span{
+    color: #CD3333;
+}
+
+
+@media (min-width: 1200px) {
+    .cad{
+        display: flex;
+        flex-direction: column;     
+    }
+}
+
+
+
+
+@media (min-width: 991px) {
+    .nav-link.a{
+        display: none;
+    }
+}
+
+
+@media (max-width: 991px) {
+    .ms-auto.a{
+        display: none;
+    }
+    .navbar-toggler {
+        margin-left: auto; 
+    }
+    .cards {
+        display: flex;
+        flex-direction: column; 
+        padding: 70px;
+   
+        
+    }
+
+
+}
+
+@media (max-width: 650px) {
+    .cards {
+        grid-template-columns: 1fr;  
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 70px;
+        
+    }
+    }
+
+
+
+@media (max-width: 430px) {
+    .cards {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        padding: 30px   ;  
+    }
 }
 
