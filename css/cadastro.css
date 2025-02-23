@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+
+body {
+    background-color: #fff;  
+}
+
+.container_fluid{
+    display: flex;
+    justify-content: space-between;
+}
+.a{
+    text-decoration: none;
+}
+
+.icone-inicial{
+    width: 200px;
+    height: 35px;  
+}
+.icone-segundario{
+    width: 150px;
+    height: 40px;  
+    border-radius: 50px;
+}
+
+.bg-custom{
+    background-color: #CD3333;
+}
+.container_fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+
+a.nav-link{
+    color: #ccc;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+a.nav-link:hover{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+
+a.nav-link.active.bg-custom{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.navText{
+    color: #fff;
+}
+
+.icone_nav{
+    width: 35px;
+    height: 35px;
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 80px 20px 20px 20px; /* topo, direita, baixo, esquerda */
+
+}
+
+.icone_cadastro{
+    width: 40px;
+    height: 40px;
+}
+
+.text{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    height: 100%;
+}
+.itens,p{
+    text-align: left;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+button.btn{
+    width: 200px;
+    font-weight: bold;
+    color: #666;
+    border: none;
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
+
+button.btn:hover{
+    background-color: #CCCCCC;
+}
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 50px;
+    padding-top: 20px;
+    width: 100%;
+    max-width: 2000px;
+}
+
+.form {
+    width: 100%;
+    max-width: 1200px;
+    
+}
+.email{
+    height: 1px;
+}
+
+.form3 {
+    gap: 30px;
+    display: grid;
+    grid-template-columns:repeat(2,1fr);
+}
+.genero{
+    display: grid;
+    grid-template-columns: repeat(2, 0.1fr);
+}
+
+input#genero-masculino,#genero-feminino{
+    width: 13px;
+    height: 25px;
+    text-align: end;
+    cursor: pointer;
+    gap: 20px;
+}
+label.nome_genero{
+    padding-bottom: 7px;
+}
+input,#data_nasc{
+    font-size: 12px;
+    color: #999;
+    cursor: text;
+}
+input,#nome,#cpf,#celular,#email,#senha,#senha2{
+    font-size: 13px;
+    color: #555;
+    cursor: text;
+}
+
+
+
+.navbar-expand-lg .navbar-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+input::placeholder {
+    color: #ADB1CC; 
+}
+.mf{
+    font-size: 14px;
+}
+
+
+
+
+label {
+    font-size: 14px;
+    color: #6A6F8D;
+    margin-bottom: 5px;
+    display: block;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="email"], input[type="date"], input[type="password"] {
+    width: 230px;
+    padding: 13px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+input#nome, #email {
+    width: 100%; 
+}
+
+.primeiro {
+    display: flex;
+    flex-direction: column;
+}
+
+.form1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+}
+
+.form2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+}
+
+.botao{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+input[type="submit"] {
+    background-color: #eb3131;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15icone_navpx;
+    width: 40%;
+    height: auto;
+    
+}
+
+input[type="submit"]:hover {
+    background-color: #c52b2b;
+}
+
+.form-container input:focus {
+    border-color: #000;
+    outline: none;
+}
+
+
+
+
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.input-container input {
+    padding-left: 30px; /* Deixa espaço para a imagem dentro do input */
+    width: 250px; /* Ajuste conforme necessário */
+
+}
+
+.input-container img {
+    position: absolute;
+    left: 10px; /* Define a posição da imagem dentro do input */
+    width: 20px; /* Ajuste o tamanho da imagem */
+    height: 20px; /* Ajuste o tamanho da imagem */
+    
+}
