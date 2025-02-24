@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;    
     text-decoration: none;
+    font-family: "Poppins", serif;
 
 }
 
@@ -41,8 +42,37 @@ a.nav-link.active.bg-custom{
     color: #fff;
     border-bottom: 2px solid #fff;
 }
+.icone_nav{
+    
+}
+
+button.btn_nav{
+    display: flex !important;
+    gap: 10px;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    text-align: start;
+    padding-left: 5px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 8px;
+}
 
 
+button.btn_nav:hover{
+    background-color: #b42121;
+}
+
+.modal-header .btn-close:hover{
+    background-color: #b42121;
+}
+
+
+.modal-header{
+    background-color: #CD3333;
+}
 
 .text{
     color: #fff;
@@ -519,3 +549,76 @@ section .container{
     }
 }
 
+
+/* modal */
+
+.modal-dialog {
+    position: fixed !important;
+    top: 0;
+    right: 20px;
+    margin: 0;
+    height: 70vh !important;
+    width: 350px !important; /* Largura do modal definida */
+}
+
+
+
+.modal-content {
+    height: 100%; /* Faz o conteúdo do modal ocupar toda a altura do modal */
+    border-radius: 15px !important; /* Remove bordas arredondadas */
+
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+button.btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #CD3333;
+    color: #fff;
+    border: #CD3333;
+}
+
+button.btn2 {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #000;
+    border: 0.5px solid #666;
+}
+
+button.btn:hover {  
+    background-color: #b42121;
+    color: #fff;
+}
+
+button.btn2:hover {
+    background-color: #e1e1e1;
+}
+
+.content_modal{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.modal_title{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.modal_sub{
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+
+}

@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+
+}
+
+
+.container_fluid{
+    display: flex;
+    justify-content: space-between;
+}
+.a{
+    text-decoration: none;
+}
+
+.icone-inicial{
+    width: 200px;
+    height: 35px;  
+}
+.icone-segundario{
+    width: 150px;
+    height: 40px;  
+    border-radius: 50px;
+}
+
+.bg-custom{
+    background-color: #CD3333;
+}
+.container_fluid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+
+a.nav-link{
+    color: #ccc;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: 0.3s;
+}
+a.nav-link:hover{
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+
+a.nav-link.active.bg-custom{
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.navText{
+    color: #fff;
+}
+
+.icone_nav{
+    width: 35px;
+    height: 35px;
+}
+
+.navbar-expand-lg .navbar-nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+
+}
+p.titulo{
+    text-align: left;
+    font-weight: bold;
+    font-size: 35px;
+    color: #c52b2b;
+    padding-bottom: 30px;
+}
+p.sub{
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: #444;
+    padding-bottom: 40px;
+
+}
+
+h1 {
+    color: #333;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+}
+
+label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"], input[type="password"], input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    background-color: #c52b2b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width:100%;
+}
+
+
+
+input[type="submit"]:hover {
+    background-color: #a02424;
+}
+
+.form-container input:focus {
+    border-color: #000;
+    outline: none;
+}
+
+.esqueceu_senha{
+    cursor: pointer;
+    margin-bottom: 30px;
+
+}
+
+.esqueceu_senha,p{
+    font-size: 16px;
+    color: #555;
+}
+
+.icone_cadastro{
+    width: 30px;
+    height: 30px;
+}
+
+.teste{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.cadastre{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+input[type="submit2"] {
+    background-color: #f2f2f2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #666;
+}
+
+input[type="submit2"]:hover {
+    background-color: #CCCCCC;
+    color: #000;
+}
