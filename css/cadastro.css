@@ -7,6 +7,7 @@
 
 
 body {
+    
     background-color: #fff;  
 }
 
@@ -175,7 +176,7 @@ label {
     font-weight: 500;
 }
 
-input[type="text"], input[type="email"], input[type="date"], input[type="password"] {
+input[type="text"],[type="textt"],[type="teext"],[type="ttext"],  input[type="email"], input[type="date"], input[type="password"] {
     width: 230px;
     padding: 13px;
     margin-bottom: 10px;
@@ -192,7 +193,34 @@ input#nome, #email {
     display: flex;
     flex-direction: column;
 }
-
+    input[type="textt"] {
+        padding-left: 40px; /* Espaço para a imagem */
+        background-image: url('../img/icons8-usuário-30.png'); /* Caminho da sua imagem */
+        background-repeat: no-repeat;
+        background-position: 10px center; /* Move a imagem para a esquerda */
+        background-size: 20px 20px; /* Ajuste o tamanho da imagem */
+    }
+    input[type="teext"] {
+        padding-left: 40px; /* Espaço para a imagem */
+        background-image: url('../img/icons8-nova-mensagem-24.png'); /* Caminho da sua imagem */
+        background-repeat: no-repeat;
+        background-position: 10px center; /* Move a imagem para a esquerda */
+        background-size: 20px 20px; /* Ajuste o tamanho da imagem */
+    }
+    input[type="ttext"] {
+        padding-left: 40px; /* Espaço para a imagem */
+        background-image: url('../img/icons8-celular-24.png'); /* Caminho da sua imagem */
+        background-repeat: no-repeat;
+        background-position: 10px center; /* Move a imagem para a esquerda */
+        background-size: 20px 20px; /* Ajuste o tamanho da imagem */
+    }
+    input[type="password"] {
+        padding-left: 40px; /* Espaço para a imagem */
+        background-image: url('../img/icons8-chave-24.png'); /* Caminho da sua imagem */
+        background-repeat: no-repeat;
+        background-position: 10px center; /* Move a imagem para a esquerda */
+        background-size: 20px 20px; /* Ajuste o tamanho da imagem */
+    }
 .form1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
@@ -261,4 +289,25 @@ input[type="submit2"] {
 
 input[type="submit2"]:hover{
     background-color: #CCCCCC;
+}
+hr{
+height: 2px;
+background-color: #000;
+}
+.conteudo_cadastro{
+height: 500px;
+text-align: center;
+background-color: #ffffff; /* Cor de fundo da div */
+padding: 20px; /* Espaçamento interno */
+border-radius: 8px; /* Bordas arredondadas */
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra */
+margin: 20px 0; /* Margem acima e abaixo */ 
+}
+
+.subTitulo{
+    font-size: 30px;
+}
+
+.texto_sub{
+    font-size: 18px;
 }
