@@ -14,6 +14,8 @@ body {
 .container_fluid{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .a{
     text-decoration: none;
@@ -67,6 +69,9 @@ a.nav-link.active.bg-custom{
     height: 35px;
 }
 
+
+
+
 .container{
     display: grid;
     justify-content: center;
@@ -105,12 +110,10 @@ a.nav-link.active.bg-custom{
 
 .form-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); 
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas em telas grandes */
     gap: 50px;
-    padding-top: 20px;
     width: 100%;
-    max-width: 2000px;
-    padding-bottom: 30px;
+    padding-top: 20px;  
 }
 
 .form {
@@ -118,10 +121,6 @@ a.nav-link.active.bg-custom{
     max-width: 1200px;
     
 }
-.email{
-    height: 1px;
-}
-
 .form3 {
     gap: 30px;
     display: grid;
@@ -154,6 +153,17 @@ input,#nome,#cpf,#celular,#email,#senha,#senha2{
     color: #555;
     cursor: text;
 }
+
+.email{
+    display: flex;
+    flex-direction: column;
+}
+
+.primeiro{
+    display: flex;
+    flex-direction: column;
+}
+
 
 
 
@@ -194,10 +204,7 @@ input#nome, #email {
     width: 100%; 
 }
 
-.primeiro {
-    display: flex;
-    flex-direction: column;
-}
+
     input[type="textt"] {
         padding-left: 40px; /* Espaço para a imagem */
         background-image: url('../img/icons8-usuário-30.png'); /* Caminho da sua imagem */
@@ -229,11 +236,13 @@ input#nome, #email {
 .form1 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
+    gap: 10px;
 }
 
 .form2 {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); 
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
 }
 
 .botao{
@@ -253,7 +262,7 @@ input[type="submit"]:hover {
 }
 
 
-input[type="submit"] {
+.botao_continuar {
     background-color: #c52b2b;
     color: white;
     padding: 10px 20px;
@@ -261,7 +270,7 @@ input[type="submit"] {
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
-    width: 100%;
+    width: 180px;
 }
 
 input[type="button"] {
@@ -371,15 +380,234 @@ input#aceito_dados{
     
 }
 
+.botao_voltar{
+    background-color: #F2F2F2;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 130px;
+}
 
-@media (min-width:1024px){
+@media (min-width: 1025px) {
+    .botao_voltar{
+        display: none;
+    }
+
+
     
 }
 
-@media (min-width:768px){
+/* Ajustes para dispositivos menores */
+@media (max-width: 1024px) {
+    .container {
+        padding: 60px 20px;
+    }
     
+    .form-container {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    
+    .itens {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navText {
+        display: none; 
+    }
+    .icone-inicial {
+        display: block; /* Garante que a imagem será exibida */
+        margin: 0 auto; /* Centraliza a imagem na navbar */
+    }
+    .navbar-toggler {
+        display: none; 
+    }
+    
+    .navbar-collapse {
+        display: flex !important; /* Garante que a navbar esteja sempre visível */
+    }
+    hr{
+        display: none;
+    }
+    .conteudo_cadastro{
+        display: none;
+    }
+    .botao{
+        order: 1;
+    }
+    
+    .titulo_cadastrodiv{
+        order: 2;
+    }
+    .paiBotao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 30px;
+        padding: 20px 0px 30px;
+    }
+    input[type="button"]{
+        display: none;
+    }
 }
 
-@media (min-width:480px){
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .icone-inicial {
+        width: 180px;
+        height: 30px;
+    }
+    .navbar-toggler {
+        display: none; 
+    }
     
+    .navbar-collapse {
+        display: flex !important;  
+    }
+    input, #nome, #cpf, #celular, #email{
+        width: 100%;
+    }
+    input, #data_nasc{
+        width: 80%;
+    }
+    .nasc_genero{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .genero{
+        gap: 3px;
+    }
+    .form1{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .icone-inicial {
+        width: 180px;
+        height: 30px;
+    }
+    .navbar-toggler {
+        display: none; 
+    }
+    
+    .navbar-collapse {
+        display: flex !important;  
+    }
+    input, #nome, #cpf, #celular, #email{
+        width: 100%;
+    }
+    input, #data_nasc{
+        width: 80%;
+    }
+    .nasc_genero{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .genero{
+        gap: 3px;
+    }
+    .form1{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 480px) {
+    .container {
+        padding: 40px 15px;
+    }
+
+    .form-container {
+        grid-template-columns: 1fr; 
+    }
+
+    .form1, .form3 {
+        grid-template-columns: 1fr;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"] {
+        font-size: 14px;
+    }
+    
+    .botao {
+        margin-top: 20px;
+    }
+    
+    .navbar-toggler {
+        display: block;
+    }
+    
+    .navText {
+        font-size: 14px
+    }
+    
+    .titulo-cadastro {
+        font-size: 18px;
+    }
+
+    .conteudo_cadastro {
+        padding: 15px;
+        width: 100%;
+    }
+    .navbar-toggler {
+        display: none; 
+    }
+    
+    .navbar-collapse {
+        display: flex !important;
+    }
+    .navbar-brand{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    input, #nome, #cpf, #celular, #email{
+        width: 100%;
+    }
+    input, #data_nasc{
+        width: 80%;
+    }
+    .nasc_genero{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .genero{
+        gap: 3px;
+    }
+    .titulo_cadastrodiv{
+        background-color: #eee;
+        border-radius: 30px;
+    }
+
+
+}
+
