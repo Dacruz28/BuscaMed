@@ -58,6 +58,8 @@ button.btn_nav{
     width: 100%;
     border-radius: 20px;
     padding: 8px;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -318,9 +320,10 @@ section .container{
         display: flex;
         flex-direction: column;     
     }
+    .botao_nav{
+        display: none;
+    }
 }
-
-
 
 
 @media (min-width: 991px) {
@@ -345,8 +348,10 @@ section .container{
     .navbar-toggler {
         margin-left: auto; 
     }
-    
 
+    .botao_nav{
+        display: none;
+    }
 
 }
 
@@ -434,6 +439,9 @@ section .container{
 
     .img img{
         content: url(../img/B1.png);
+    }
+        .botao_nav{
+        display: none;
     }
 }
 
@@ -621,4 +629,11 @@ button.btn2:hover {
     color: #555;
     text-align: center;
 
+}
+
+.itens{
+    display: none;
+}
+.img-icones{
+    display: none;
 }
