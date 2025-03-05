@@ -320,9 +320,7 @@ section .container{
         display: flex;
         flex-direction: column;     
     }
-    .botao_nav{
-        display: none;
-    }
+
 }
 
 

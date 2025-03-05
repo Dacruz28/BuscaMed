@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-custom ">
+        <nav class="navbar navbar-expand-lg bg-custom">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img src="./img/busca.png" alt="buscamed" class="icone-inicial"></a>
                 <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
@@ -20,27 +20,56 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav mx-auto d-flex" style="gap: 3rem;">
-                        <a class="nav-link" aria-current="page" href="./index.html">Catálogo</a>
-                        <a class="nav-link" href="./index2.html">Sobre Nós</a>
-                        <a class="nav-link active bg-custom" href="./index3.html">Contato</a>
-                        <a class="nav-link a" href="#"><button class="bnt">Baixar o app</button></a>
+                        <a class="nav-link " aria-current="page" href="./index.html">Catálogo</a>
+                        <a class="nav-link  active bg-custom" href="index3.html">Sobre Nós</a>
+                        <a class="nav-link" href="./index2.html">Contato</a>
 
+
+                        <a class="nav-link a" href="#"><button class="btn_nav" data-bs-toggle="modal" data-bs-target="#welcomeModal">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII=" alt="user">                        
+                            Boas-vindas! <br> Entrar ou Cadastrar
+                        </button></a>
                     </div>
                 </div>
-                <div class="ms-auto a">
-                    <div class="ms-auto a">
-                        <a class="nav-link" href="#"><button class="bnt">Baixar o App</button></a>
-                    </div>
+    
+                <!-- Botão Entrar ou Cadastrar -->
+                <div class="botao_nav">
+                    <button class="btn_nav" data-bs-toggle="modal" data-bs-target="#welcomeModal">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII=" alt="user">                        
+                        Boas-vindas! <br> Entrar ou Cadastrar
+                    </button>
+                </div>
+                
             </div>
         </nav>
     </header>
+    
+    <!-- Modal Bem-vindo -->
+    <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="./img/busca.png" alt="">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content_modal">
+                    <h5 class="modal_title" id="welcomeModalLabel">Boas-vindas!</h5>
+                    <p class="modal_sub">Faça seu Login ou cadastro</p>
+                </div>
+                <a href="./login.html"><button class="btn w-100 mb-3" id="loginButton">Entrar</button></a>
+                <a href="./cadastro.html"><button class="btn2 w-100" id="registerButton">Cadastrar</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
     <section class="container">
         <div class="content">
             <div class="text">
         <h2>Facilitando o acesso á saúde</h2>
-        <p2>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, minima illum architecto dicta, neque culpa dolorem adipisci cumque molestias necessitatibus, modi consequatur maiores omnis. Libero ipsum laborum quaerat at ducimus.</p2>
+        <p class="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam, minima illum architecto dicta, neque culpa dolorem adipisci cumque molestias necessitatibus, modi consequatur maiores omnis. Libero ipsum laborum quaerat at ducimus.</p>
             </div>
-        <div class="img">
+        <div class="img1">
         <img src="..." alt="img">
         </div>
         </div> 
@@ -84,5 +113,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
 </body>
 </html>

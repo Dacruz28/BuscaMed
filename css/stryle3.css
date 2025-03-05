@@ -84,6 +84,8 @@ section.img{
 
 
 section .container{
+    display: flex;
+    flex-direction: column];
     width: 100%;
 }
 
@@ -190,16 +192,34 @@ p{
     justify-content: space-around;
     align-items: center;
     padding-top: 50px;
+    padding-bottom: 60px;
 
 }
 .card1{
     width: 350px;   
-    background-color: #eee;
+    background-color: #fff;
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    border-left: 5px solid #FFD700;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
+
+
+}
+
+.card2{
+    width: 350px;   
+    background-color: #fff;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-left: 5px solid #CD3333;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
+
 }
 .card1 h5, p{
     text-align: center;
@@ -219,15 +239,7 @@ p{
     height: 200px;
 }
 
-.card2{
-    width: 350px;   
-    background-color: #eee;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
+
 
 .card2 h5, p{
     text-align: center;
@@ -295,6 +307,7 @@ h2,span{
     .nav-link.a{
         display: none;
     }
+
 }
 
 
@@ -309,10 +322,37 @@ h2,span{
         display: flex;
         flex-direction: column; 
         padding: 70px;
-   
-        
     }
+    section .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    selection.cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .cads{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+    .img1{
+        display: none;
 
+    }
+    .content{
+        align-items: center;
+        justify-content: center;
+    }
+    .text h2{
+        text-align: center;
+    }
+    .p2{
+        text-align: center;
+
+    }
 
 }
 
@@ -339,3 +379,142 @@ h2,span{
     }
 }
 
+/* nav */
+button.btn_nav{
+    display: flex !important;
+    gap: 10px;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    text-align: start;
+    padding-left: 5px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+}
+
+button.btn_nav:hover{
+    background-color: #b42121;
+}
+
+@media (max-width: 991px) {
+
+    .botao_nav{
+        display: none;
+    }
+}
+
+
+
+/* modal */
+
+.modal-dialog {
+    position: fixed !important;
+    top: 0;
+    right: 20px;
+    margin: 0;
+    height: 70vh !important;
+    width: 350px !important; /* Largura do modal definida */
+}
+
+
+
+.modal-content {
+    height: 100%; /* Faz o conteúdo do modal ocupar toda a altura do modal */
+    border-radius: 15px !important; /* Remove bordas arredondadas */
+
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+button.btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #CD3333;
+    color: #fff;
+    border: #CD3333;
+}
+
+button.btn2 {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #000;
+    border: 0.5px solid #666;
+}
+
+button.btn:hover {  
+    background-color: #b42121;
+    color: #fff;
+}
+
+button.btn2:hover {
+    background-color: #e1e1e1;
+}
+
+.content_modal{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.modal_title{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.modal_sub{
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+
+}
+
+.itens{
+    display: none;
+}
+.img-icones{
+    display: none;
+}
+
+.modal-header .btn-close:hover{
+    background-color: #b42121;
+}
+
+
+.modal-header{
+    background-color: #CD3333;
+}
+
+
+
+
+.content_modal{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.modal_title{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.modal_sub{
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+
+}

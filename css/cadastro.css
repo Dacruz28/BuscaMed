@@ -450,7 +450,7 @@ input#aceito_dados{
         gap: 30px;
         padding: 20px 0px 30px;
     }
-    input[type="button"]{
+    .bnt_cadastro{
         display: none;
     }
 }
