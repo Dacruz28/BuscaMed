@@ -1,0 +1,582 @@
+    *{
+        margin: 0;
+        padding: 0;    
+        text-decoration: none;
+
+    }
+    body{
+        background-color: #f1f1f1;
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /* nav */
+
+    .a{
+        text-decoration: none;
+    }
+
+    .icone-inicial{
+        width: 200px;
+        height: 35px;  
+    }
+    .icone-segundario{
+        width: 150px;
+        height: 40px;  
+        border-radius: 50px;
+    }
+
+    .bg-custom{
+        background-color: #CD3333;
+    }
+
+
+
+    a.nav-link{
+        color: #ccc;
+        font-size: 1.1rem;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    a.nav-link:hover{
+        font-size: 1.3rem;
+        color: #fff;
+    }
+
+
+    a.nav-link.active.bg-custom{
+        color: #fff;
+        border-bottom: 2px solid #fff;
+    }
+
+    .sla{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+
+    /* Estilo padrão para .navbar-nav */
+    .navbar-nav {
+        gap: 3rem; /* Valor original */
+    }
+
+    /* search */
+
+    .form button {
+        border: none;
+        background: none;
+        color: #8b8ba7;
+    }
+    /* styling of whole input container */
+    .form {
+        --timing: 0.3s;
+        --width-of-input: 200px;
+        --height-of-input: 40px;
+        --border-height: 2px;
+        --input-bg: #fff;
+        --border-color: #3042df;
+        --border-radius: 10px;
+        --after-border-radius: 10px;
+        position: relative;
+        width: var(--width-of-input);
+        height: var(--height-of-input);
+        display: flex;
+        align-items: center;
+        padding-inline: 0.8em;
+        border-radius: var(--border-radius);
+        transition: border-radius 0.5s ease;
+        background: var(--input-bg,#fff);
+        width: 100%;
+    }
+    /* styling of Input */
+    .input {
+        font-size: 0.9rem;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        padding-inline: 0.5em;
+        padding-block: 0.7em;
+        border: none;
+    }
+    /* styling of animated border */
+    .form:before {
+        content: "";
+        position: absolute;
+        background: var(--border-color);
+        transform: scaleX(0);
+        transform-origin: center;
+        width: 100%;
+        height: var(--border-height);
+        left: 0;
+        bottom: 0;
+        border-radius: 100px;
+        transition: transform var(--timing) ease;
+    }
+    /* Hover on Input */
+    .form:focus-within {
+        border-radius: var(--after-border-radius);
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    /* here is code of animated border */
+    .form:focus-within:before {
+        transform: scale(1);
+    }
+    /* styling of close button */
+    /* == you can click the close button to remove text == */
+    .reset {
+        border: none;
+        background: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    /* close button shown when typing */
+    input:not(:placeholder-shown) ~ .reset {
+        opacity: 1;
+        visibility: visible;
+    }
+    /* sizing svg icons */
+    .form svg {
+        width: 17px;
+        margin-top: 3px;
+    }
+
+
+
+    
+
+
+
+    .form1 {
+        --timing: 0.3s;
+        --width-of-input: 200px;
+        --height-of-input: 40px;
+        --border-height: 2px;
+        --input-bg: #fff;
+        --border-color: #3042df;
+        --border-radius: 10px;
+        --after-border-radius: 10px;
+        position: relative;
+        width: var(--width-of-input);
+        height: var(--height-of-input);
+        display: flex;
+        align-items: center;
+        padding-inline: 0.8em;
+        border-radius: var(--border-radius);
+        transition: border-radius 0.5s ease;
+        background: var(--input-bg,#fff);
+        width: 100%;
+    }
+    /* styling of Input */
+    .input {
+        font-size: 0.9rem;
+        background-color: transparent;
+        width: 100%;
+        height: 100%;
+        padding-inline: 0.5em;
+        padding-block: 0.7em;
+        border: none;
+    }
+    /* styling of animated border */
+    .form1:before {
+        content: "";
+        position: absolute;
+        background: var(--border-color);
+        transform: scaleX(0);
+        transform-origin: center;
+        width: 100%;
+        height: var(--border-height);
+        left: 0;
+        bottom: 0;
+        border-radius: 100px;
+        transition: transform var(--timing) ease;
+    }
+    /* Hover on Input */
+    .form1:focus-within {
+        border-radius: var(--after-border-radius);
+    }
+    
+    input:focus {
+        outline: none;
+    }
+    /* here is code of animated border */
+    .form1:focus-within:before {
+        transform: scale(1);
+    }
+    /* styling of close button */
+    /* == you can click the close button to remove text == */
+    .reset {
+        border: none;
+        background: none;
+        opacity: 0;
+        visibility: hidden;
+    }
+    /* close button shown when typing */
+    input:not(:placeholder-shown) ~ .reset {
+        opacity: 1;
+        visibility: visible;
+    }
+    /* sizing svg icons */
+    .form1 svg {
+        width: 17px;
+        margin-top: 3px;
+    }
+    .lupa{
+        border: none;
+        background: none;
+        color: #9595AE;
+    }
+
+
+
+
+
+    button.btn_nav{
+        display: flex !important;
+        gap: 10px;
+        font-size: 13px;
+        color: #fff;
+        border: none;
+        background-color: transparent;
+        text-align: start;
+        padding-left: 5px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 8px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button.btn_nav:hover{
+        background-color: #b42121;
+    }
+
+    @media (max-width: 991px) {
+
+        .botao_nav{
+            display: none;
+        }
+    }
+
+
+
+    /* modal */
+
+    .modal-dialog {
+        position: fixed !important;
+        top: 0;
+        right: 20px;
+        margin: 0;
+        height: 70vh !important;
+        width: 350px !important; /* Largura do modal definida */
+    }
+
+
+
+    .modal-content {
+        height: 100%; /* Faz o conteúdo do modal ocupar toda a altura do modal */
+        border-radius: 15px !important; /* Remove bordas arredondadas */
+
+    }
+
+    .modal-body {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    button.btn {
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        background-color: #CD3333;
+        color: #fff;
+        border: #CD3333;
+    }
+
+    button.btn2 {
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
+        border-radius: 30px;
+        background-color: #fff;
+        color: #000;
+        border: 0.5px solid #666;
+    }
+
+    button.btn:hover {  
+        background-color: #b42121;
+        color: #fff;
+    }
+
+    button.btn2:hover {
+        background-color: #e1e1e1;
+    }
+
+    .content_modal{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .modal_title{
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .modal_sub{
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+
+    }
+
+    .itens{
+        display: none;
+    }
+    .img-icones{
+        display: none;
+    }
+
+
+    .modal-header .btn-close:hover{
+        background-color: #b42121;
+    }
+
+
+    .modal-header{
+        background-color: #CD3333;
+    }
+
+
+
+    .content_modal{
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .modal_title{
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .modal_sub{
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+
+    }
+
+    @media (max-width: 991px){
+        .botao_nav{
+            display: none;
+        }
+        .sla{
+            display: none;
+        }
+        .form1{
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 991px) {
+        .nav-link.a{
+            display: none;
+        }
+        .form1{
+            display: none;
+        }
+
+    }
+
+
+    @media (max-width: 1098px) {
+        .icone-inicial{
+            width: 150px;
+            height: 25px;  
+        }
+
+    }
+
+    /* Responsividade para telas com largura máxima de 1048px */
+    @media (max-width: 1048px) {
+        .navbar-nav {
+            gap: 1rem; /* Novo valor de gap para telas menores ou iguais a 1048px */
+        }
+        .sla{
+            width: 40%;
+        }
+    }
+
+
+    /* @media (max-width: 400px){
+        .swiper
+
+    } */
+
+    /* conteudo */
+    .titulo{
+        text-align: center;
+        padding-top: 50px;
+        font-weight: 600;
+        font-size: 35px;
+        color: #c52b2b;
+    }
+    .sub_titulo{
+        text-align: center;
+        font-size: 18px;
+        color: #333;
+
+    }
+
+    /* cards */
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px; 
+        padding-bottom: 70px;
+    }
+
+    .cad{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(59, 59, 59, 0.20);
+        max-width: 300px;
+        height: 450px;
+        margin: 0 auto;  /* Garante que o card fique centralizado */
+
+    }
+
+    .cad img{
+        width: 100%;
+        height: 276px;
+    }
+
+    .cad p{
+        text-align: center;
+        font-size: 0.9rem;
+        color: #5c5c5c;
+        font-weight: 400;
+        font-family: "Poppins", serif;
+
+    }
+    .cad h2{
+        color: #CD3333;
+        font-size: 1.5rem;
+        text-align: center;
+
+    }
+
+    .cad button{
+        width: 100%;
+        height: 40px;
+        border-radius: 10px;
+        background-color: #CD3333;
+        color: #fff;
+        border: #CD3333;
+    }
+
+    .img-card{
+        width: 100%;
+        height: 300px;
+    }
+
+    .card-footer {
+        width: 100%;
+        padding: 0 10px;
+        margin-top: auto; 
+    }
+
+
+
+/* Estilos do swiper */
+.swiper-container {
+    width: 100%;
+    overflow: hidden;  /* Impede o scroll horizontal */
+    padding-bottom: 50px; /* Espaço para as bolinhas */
+    position: relative;   /* Necessário para o posicionamento das bolinhas */
+    display: flex;
+    justify-content: center; /* Centraliza o swiper */
+}
+
+/* Centraliza o conteúdo dos slides */
+.swiper-slide {
+    display: flex;
+    justify-content: center; /* Garante que o slide (card) fique no centro */
+}
+
+/* Paginador (bolinhas) */
+.swiper-pagination {
+    position: absolute;
+    bottom: 10px;  /* Posiciona o paginador abaixo dos cards */
+    width: 100%;   /* Largura total */
+    text-align: center; /* Centraliza as bolinhas */
+}
+
+.swiper-pagination-bullet {
+    background-color: #CD3333; /* Cor das bolinhas */
+    width: 12px;  /* Tamanho da bolinha */
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px; /* Espaço entre as bolinhas */
+    opacity: 0.7;  /* Opacidade das bolinhas */
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #000; /* Cor da bolinha ativa */
+    opacity: 1; /* Maior opacidade na bolinha ativa */
+}
+
+/* Botões de navegação */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #CD3333;  /* Cor dos botões de navegação */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .swiper-container {
+        display: flex;
+        justify-content: center; /* Centraliza o swiper no contêiner */
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center; /* Centraliza o conteúdo dentro do slide */
+    }
+}
+
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr; /* Exibe um card por vez em telas muito pequenas */
+        padding: 0 10px;  /* Ajusta o espaçamento nas laterais */
+    }
+
+    /* Ajuste para a centralização do único card quando visível */
+    .swiper-slide {
+        display: flex;
+        justify-content: center; /* Garante que o card no slide fique centralizado */
+    }
+}
+    
+
+
+
+
+    
+    
+
+
+    /* footer */
+
+
+
