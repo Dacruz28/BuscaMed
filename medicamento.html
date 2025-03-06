@@ -99,6 +99,34 @@
 <p class="sub_titulo">Procure o medicamento medicamentos que vc precisa</p>
 
 
+
+
+
+
+
+<!-- Modal medicamento -->
+<div class="modal fade" id="modalDisponibilidade" tabindex="-1" aria-labelledby="modalDisponibilidadeLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalDisponibilidadeLabel"><img src="./img/busca.png" alt=""></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h3 id="medicamentoNome">Nome do Medicamento</h3>
+          <p id="medicamentoDescricao">Descrição do medicamento.</p>
+          <p id="medicamentoDisponibilidade">Disponibilidade: Em estoque</p>
+          <!-- Aqui você pode adicionar outros detalhes sobre o medicamento -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  
 <section class="container">
     <!-- Swiper -->
     <div class="swiper-container">
@@ -109,8 +137,11 @@
                     <h2>Parecetamol</h2>
                     <p>Analgésico e antitérmico.</p>
                     <div class="card-footer">
-                        <button>Ver Disponibilidade</button>
-                    </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
+                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                    Ver Disponibilidade
+                </button>                    
+                </div>
                 </div>
             </div>
 
@@ -120,8 +151,11 @@
                     <h2>Amoxicilina</h2>
                     <p>Antibióticos para infecções.</p>
                     <div class="card-footer">
-                        <button>Ver Disponibilidade</button>
-                    </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
+                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                    Ver Disponibilidade
+                </button>                    
+            </div>
                 </div>
             </div>
 
@@ -131,8 +165,11 @@
                     <h2>Dipirona</h2>
                     <p>Analgésico e antiespasmódica.</p>
                     <div class="card-footer">
-                        <button>Ver Disponibilidade</button>
-                    </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
+                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                    Ver Disponibilidade
+                </button>                    
+            </div>
                 </div>
             </div>
 
@@ -142,8 +179,11 @@
                     <h2>Losartana</h2>
                     <p>Controlador de pressão arterial.</p>
                     <div class="card-footer">
-                        <button>Ver Disponibilidade</button>
-                    </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
+                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                    Ver Disponibilidade
+                </button>                     
+            </div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -152,8 +192,11 @@
                     <h2>Losartana</h2>
                     <p>Controlador de pressão arterial.</p>
                     <div class="card-footer">
-                        <button>Ver Disponibilidade</button>
-                    </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
+                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                    Ver Disponibilidade
+                </button>                           
+            </div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -162,8 +205,11 @@
                     <h2>Losartana</h2>
                     <p>Controlador de pressão arterial.</p>
                     <div class="card-footer">
-                        <button>Ver Disponibilidade</button>
-                    </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
+                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                    Ver Disponibilidade
+                </button>                           
+            </div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -172,8 +218,11 @@
                     <h2>Losartana</h2>
                     <p>Controlador de pressão arterial.</p>
                     <div class="card-footer">
-                        <button>Ver Disponibilidade</button>
-                    </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
+                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                    Ver Disponibilidade
+                </button>                           
+            </div>
                 </div>
             </div>
             <div class="swiper-slide">
@@ -182,8 +231,11 @@
                     <h2>Losartana</h2>
                     <p>Controlador de pressão arterial.</p>
                     <div class="card-footer">
-                        <button>Ver Disponibilidade</button>
-                    </div>
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
+                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                    Ver Disponibilidade
+                </button>                           
+            </div>
                 </div>
             </div>
         </div>
@@ -208,5 +260,6 @@
         <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
         <script src="./js/swiper.js"></script>
+        <script src="./js/modal.js"></script>
 </body>
 </html>
