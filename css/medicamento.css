@@ -579,4 +579,75 @@
     /* footer */
 
 
-
+    .footer{
+        width: 100%;
+        height: 100%;
+        background-image:linear-gradient(to right, #CD3333, #DC2424,#E41C1C,#EC1211,#FB0303 )  ;
+        padding: 50px 20px 30px 20px; /* 10px no topo, 20px à direita, 30px embaixo, 40px à esquerda */
+        align-items: center;
+        font-family: "Poppins", serif;
+    
+    }
+    
+    .itens-footer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 20px; 
+        padding-bottom: 30px;
+        border-bottom: 1px solid #E14C48;
+    
+    }
+    
+    .busca p{
+        width: 87%;
+        text-align: left;
+        color: #ccc;
+        padding-top: 13px;
+    }
+    
+    .liks h3{
+        color: #fff;
+        text-align: left;
+        padding-bottom: 5px;
+        
+    }
+    
+    .liks p{
+        color: #fff;
+        text-align: left;
+        margin: 8px;
+    }
+    
+    
+    .siga h3{
+        color: #fff;
+        text-align: left;
+        padding-bottom: 5px;
+    }
+    
+    
+    .baixe h3{
+        color: #fff;
+    }
+    
+    .baixe p{
+        color: #fff;
+        text-align: left;
+    }
+    
+    .play{
+        width: 200px;
+        
+    }
+    
+    
+    
+    .direitos{
+        color: #f1b3b4;
+        padding-top: 10px;
+        font-size: 1rem;
+        font-weight: 400;
+        font-family: "Poppins", serif;
+        text-align: center;
+    }
+    
