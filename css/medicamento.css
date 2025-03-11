@@ -2,6 +2,8 @@
         margin: 0;
         padding: 0;    
         text-decoration: none;
+        font-family: "Poppins", serif;
+        
 
     }
     body{
@@ -10,13 +12,14 @@
         height: auto;
     }
 
-
+    p a{
+        color: #fff;
+        text-decoration: none;
+        outline: none;
+    }
+    
 
     /* nav */
-
-    .a{
-        text-decoration: none;
-    }
 
     .icone-inicial{
         width: 200px;
@@ -39,6 +42,8 @@
         font-size: 1.1rem;
         font-weight: bold;
         transition: 0.3s;
+        font-family: "Poppins", serif;
+
     }
     a.nav-link:hover{
         font-size: 1.3rem;
@@ -249,6 +254,8 @@
         padding: 8px;
         align-items: center;
         justify-content: center;
+        font-family: "Poppins", serif;
+
     }
 
     button.btn_nav:hover{
@@ -651,3 +658,186 @@
         text-align: center;
     }
     
+
+    @media (min-width: 1200px) {
+        .cad{
+            display: flex;
+            flex-direction: column;     
+        }
+    
+    }
+    
+    
+    @media (min-width: 991px) {
+        .nav-link.a{
+            display: none;
+        }
+    
+    }
+    
+    
+    @media (max-width: 991px) {
+    
+    
+        .cards {
+            grid-template-columns: 1fr 1fr; 
+        }
+    
+        .cad img{
+            max-width: 100%;
+            height: 20rem;
+        }
+    
+        .ms-auto.a{
+            display: none;
+        }
+        .navbar-toggler {
+            margin-left: auto; 
+        }
+    
+        .botao_nav{
+            display: none;
+        }
+        .cad{
+            max-width: 300px;
+        }
+    
+    }
+    
+    @media (max-width: 650px) {
+    
+        
+
+    
+        .footer {
+            height: auto; 
+    
+        }
+    
+        .itens-footer {
+            grid-template-columns: 1fr; 
+        }
+    
+        .med{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+        }
+    
+        .busca p{
+            text-align: center;
+            width: 100%;
+        }
+    
+    
+        .liks h3{
+            text-align: center;
+        }
+    
+        .liks p{
+            text-align: center;
+        }
+        
+        .siga h3{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .siga img{
+            width: 40px;
+            height: 40px;
+        }
+        .redes{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .baixe h3{
+            text-align: center;
+        }
+    
+        .baixe p{
+            text-align: center;
+        }
+    
+        .baixar{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    }
+
+    
+    
+    @media (max-width: 430px) {
+
+
+    
+        .footer {
+            height: auto; 
+            padding: 20px; 
+        }
+    
+        .itens-footer {
+            grid-template-columns: 1fr; 
+            gap: 20px;
+        }
+    
+        .busca p {
+            width: 100%;
+            text-align: center; 
+        }
+    
+        .liks h3 {
+            text-align: center;
+        }
+    
+        .liks p {
+            text-align: center;
+        }
+    
+        .siga h3 {
+            text-align: center;  
+        }
+    
+        .siga img {
+            width: 35px; 
+            height: 35px;
+        }
+    
+        .baixe h3 {
+            text-align: center; 
+        }
+    
+        .baixe p {
+            text-align: center;  
+        }
+    
+        .baixar {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .redes {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+    
+        .play {
+            width: 150px; 
+        }
+    }

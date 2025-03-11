@@ -63,18 +63,24 @@ button.btn_nav:hover{
     background-color: #b42121;
 }
 
+a{
+    color: #fff;
 
-
+}
 
 
 
 section.img{
     display: flex;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 20px;
+}
+
+section.img img{
+    max-width: 100%;
 }
 
 
@@ -147,6 +153,7 @@ section .container{
     grid-template-columns: repeat(4, 1fr);
     gap: 20px; 
     padding-bottom: 70px;
+
 }
 
 .cad{
@@ -284,6 +291,7 @@ section .container{
     .nav-link.a{
         display: none;
     }
+
 }
 
 
@@ -292,6 +300,11 @@ section .container{
 
     .cards {
         grid-template-columns: 1fr 1fr; 
+    }
+
+    .cad img{
+        max-width: 100%;
+        height: 20rem;
     }
 
     .ms-auto.a{
@@ -304,6 +317,9 @@ section .container{
     .botao_nav{
         display: none;
     }
+    .cad{
+        max-width: 300px;
+    }
 
 }
 
@@ -311,11 +327,15 @@ section .container{
 
     
     .cards {
-        grid-template-columns: 1fr;  
+        display: flex;
+        flex-direction: column;
         gap: 20px;
         align-items: center;
         justify-content: center;
         padding: 70px;
+    }
+    .cad img{
+        max-width: 100%;
     }
 
     .cad {

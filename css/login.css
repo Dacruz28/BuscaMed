@@ -118,13 +118,17 @@ h1 {
     max-width: 1000px;
     display: grid;
     grid-template-columns: repeat(2,1fr);
+    gap: 30px;
 }
 
 .img{
-    width: 200px;
-    height: 200px;
+    max-width: 100%;
+    height: auto;
 }
-
+.img img{
+    max-width: 100%;
+    height: auto;
+}
 label {
     font-size: 14px;
     color: #555;

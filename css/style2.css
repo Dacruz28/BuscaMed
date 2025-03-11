@@ -36,6 +36,8 @@ a.nav-link{
     font-size: 1.1rem;
     font-weight: bold;
     transition: 0.3s;
+    font-family: "Poppins", serif;
+
 }
 a.nav-link:hover{
     font-size: 1.3rem;
@@ -295,6 +297,8 @@ button.btn_nav{
     padding: 8px;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", serif;
+
 }
 
 button.btn_nav:hover{
