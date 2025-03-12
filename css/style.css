@@ -331,6 +331,7 @@ section .container{
 
 
 }
+}
 
 @media (max-width: 650px) {
 
@@ -647,5 +648,4 @@ button.btn2:hover {
         font-size: 1.1rem;  /* Define o tamanho da fonte dos botões */
         padding: 0.75rem;  /* Aumenta o padding dos botões */
     }
-}
 }

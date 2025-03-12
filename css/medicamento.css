@@ -841,3 +841,34 @@
             width: 150px; 
         }
     }
+
+
+    /* Estilos para o Modal com altura fixa */
+@media (min-width: 992px) {
+    .modal-dialog {
+        max-width: 700px;  /* Limita a largura do modal */
+        margin: 30px auto;  /* Centraliza o modal na tela */
+    }
+
+    .modal-content {
+        height: 500px;  /* Define uma altura fixa para o modal */
+        overflow-y: auto;  /* Permite rolar o conteúdo se ele exceder a altura */
+    }
+
+    /* Ajustes para o título do modal */
+    .modal-title {
+        font-size: 2.5rem;  /* Aumenta o tamanho da fonte para o título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .modal-body {
+        font-size: 1.2rem;  /* Ajuste o tamanho da fonte do corpo */
+        padding-bottom: 1rem;  /* Adiciona espaçamento na parte inferior do conteúdo */
+    }
+
+    /* Ajustes para os botões */
+    .btn, .btn2 {
+        font-size: 1.1rem;  /* Define o tamanho da fonte dos botões */
+        padding: 0.75rem;  /* Aumenta o padding dos botões */
+    }
+}
