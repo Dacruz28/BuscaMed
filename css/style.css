@@ -73,7 +73,7 @@ a{
 section.img{
     display: flex;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
     padding-left: 20px;
@@ -157,6 +157,8 @@ section .container{
 }
 
 .cad{
+    display: flex;
+    flex-direction: column;
     border: 1px solid #ccc;
     padding: 20px;
     box-shadow: 0 0 10px rgba(59, 59, 59, 0.20);
@@ -190,15 +192,21 @@ section .container{
     border: #CD3333;
 }
 
-.img-card{
+.img-card {
     width: 100%;
-    height: 300px;
+    height: auto;
+    object-fit: cover; /* Faz com que a imagem preencha o espaço sem distorcer */
 }
+
 
 .card-footer {
     width: 100%;
     padding: 0 10px;
     margin-top: auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
@@ -300,6 +308,8 @@ section .container{
 
     .cards {
         grid-template-columns: 1fr 1fr; 
+        justify-content: center;
+        align-items: center;
     }
 
     .cad img{
@@ -318,8 +328,7 @@ section .container{
         display: none;
     }
     .cad{
-        max-width: 300px;
-    }
+
 
 }
 
@@ -339,7 +348,6 @@ section .container{
     }
 
     .cad {
-        width: 100%;  
     }
 
     .footer {
@@ -417,6 +425,7 @@ section .container{
 
 @media (min-width: 651px) {
     .img {
+        
         content: url(../img/b2.png);
     }
 }
@@ -610,3 +619,33 @@ button.btn2:hover {
 
 
   
+/* Estilos para o Modal com altura fixa */
+@media (min-width: 992px) {
+    .modal-dialog {
+        max-width: 700px;  /* Limita a largura do modal */
+        margin: 30px auto;  /* Centraliza o modal na tela */
+    }
+
+    .modal-content {
+        height: 500px;  /* Define uma altura fixa para o modal */
+        overflow-y: auto;  /* Permite rolar o conteúdo se ele exceder a altura */
+    }
+
+    /* Ajustes para o título do modal */
+    .modal-title {
+        font-size: 2.5rem;  /* Aumenta o tamanho da fonte para o título */
+        text-align: center; /* Centraliza o título */
+    }
+
+    .modal-body {
+        font-size: 1.2rem;  /* Ajuste o tamanho da fonte do corpo */
+        padding-bottom: 1rem;  /* Adiciona espaçamento na parte inferior do conteúdo */
+    }
+
+    /* Ajustes para os botões */
+    .btn, .btn2 {
+        font-size: 1.1rem;  /* Define o tamanho da fonte dos botões */
+        padding: 0.75rem;  /* Aumenta o padding dos botões */
+    }
+}
+}
