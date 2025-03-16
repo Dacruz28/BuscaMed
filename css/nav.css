@@ -63,7 +63,12 @@
 
     .pai{
         padding: 15px 40px 15px 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
     }
+
 
 
     @media (max-width: 991px){
@@ -77,3 +82,17 @@
             display: none;
         }
     }
+
+
+    .dropdown-item:hover{
+        background-color: #e64343;
+        color: #fff;
+    }
+
+    .img_navbar_usuario{
+        width: 40px;
+        height: 40px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+    }
+
