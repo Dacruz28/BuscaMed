@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link
-    href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-    rel="stylesheet">
+        href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>BuscaMed</title>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 
 </head>
+
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-custom">
@@ -27,13 +29,17 @@
                 </button>
                 <form class="form1">
                     <button class="lupa">
-                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                                stroke="currentColor" stroke-width="1.333" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
                         </svg>
                     </button>
                     <input class="input" placeholder="O que deseja encontrar" required="" type="text">
                     <button class="reset" type="reset">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
                         </svg>
                     </button>
@@ -43,40 +49,82 @@
                         <a class="nav-link " aria-current="page" href="./index.html">Catálogo</a>
                         <a class="nav-link" href="index3.html">Sobre Nós</a>
                         <a class="nav-link" href="./index2.html">Contato</a>
-                        <a class="nav-link a" href="#"><button class="btn_nav" data-bs-toggle="modal" data-bs-target="#welcomeModal">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII=" alt="user">                        
-                            Boas-vindas! <br> Entrar ou Cadastrar
-                        </button></a>
-                                                <!-- From Uiverse.io by satyamchaudharydev --> 
+                        <a class="nav-link a" href="#"><button class="btn_nav" data-bs-toggle="modal"
+                                data-bs-target="#welcomeModal">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII="
+                                    alt="user">
+                                Boas-vindas! <br> Entrar ou Cadastrar
+                            </button></a>
+                        <!-- From Uiverse.io by satyamchaudharydev -->
 
                     </div>
                 </div>
                 <div class="sla">
-                <form class="form">
-                    <button>
-                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="search">
-                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9" stroke="currentColor" stroke-width="1.333" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg>
-                    </button>
-                    <input class="input" placeholder="O que deseja encontrar" required="" type="text">
-                    <button class="reset" type="reset">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
-                        </svg>
-                    </button>
-                </form>
-                <!-- Botão Entrar ou Cadastrar -->
-                <div class="botao_nav">
-                    <button class="btn_nav" data-bs-toggle="modal" data-bs-target="#welcomeModal">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII=" alt="user">                        
-                        Boas-vindas! <br> Entrar ou Cadastrar
-                    </button>
+                    <form class="form">
+                        <button>
+                            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                                aria-labelledby="search">
+                                <path
+                                    d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                                    stroke="currentColor" stroke-width="1.333" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <input class="input" placeholder="O que deseja encontrar" required="" type="text">
+                        <button class="reset" type="reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </form>
+                    <!-- Botão Entrar ou Cadastrar -->
+                    <div class="botao_nav">
+                        <button class="btn_nav" data-bs-toggle="modal" data-bs-target="#welcomeModal">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII="
+                                alt="user">
+                            Boas-vindas! <br> Entrar ou Cadastrar
+                        </button>
+                    </div>
                 </div>
-            </div>
             </div>
         </nav>
     </header>
-    
+
+    <!-- carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/aaaaaa.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/aaaaaa.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- /carousel -->
+
     <!-- Modal Bem-vindo -->
     <div class="modal fade" id="welcomeModal" tabindex="-1" aria-labelledby="welcomeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
@@ -87,9 +135,9 @@
                 </div>
                 <div class="modal-body">
                     <div class="content_modal">
-                    <h5 class="modal_title" id="welcomeModalLabel">Boas-vindas!</h5>
-                    <p class="modal_sub">Faça seu Login ou cadastro</p>
-                </div>
+                        <h5 class="modal_title" id="welcomeModalLabel">Boas-vindas!</h5>
+                        <p class="modal_sub">Faça seu Login ou cadastro</p>
+                    </div>
                     <a href="./login.html"><button class="btn w-100 mb-3" id="loginButton">Entrar</button></a>
                     <a href="./cadastro.html"><button class="btn2 w-100" id="registerButton">Cadastrar</button></a>
                 </div>
@@ -97,8 +145,8 @@
         </div>
     </div>
 
-<p class="titulo">Medicamentos</p>
-<p class="sub_titulo">Procure o medicamento que você precisa!</p>
+    <p class="titulo">Medicamentos</p>
+    <p class="sub_titulo">Procure o medicamento que você precisa!</p>
 
 
 
@@ -106,163 +154,218 @@
 
 
 
-<!-- Modal medicamento -->
-<div class="modal fade" id="modalDisponibilidade" tabindex="-1" aria-labelledby="modalDisponibilidadeLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalDisponibilidadeLabel"><img src="./img/busca.png" alt=""></h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal medicamento -->
+    <div class="modal fade" id="modalDisponibilidade" tabindex="-1" aria-labelledby="modalDisponibilidadeLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalDisponibilidadeLabel"><img src="./img/busca.png" alt=""></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h3 id="medicamentoNome">Nome do Medicamento</h3>
+                    <p id="medicamentoDescricao">Descrição do medicamento.</p>
+                    <p id="medicamentoDisponibilidade">Disponibilidade: Em estoque</p>
+                    <!-- Aqui você pode adicionar outros detalhes sobre o medicamento -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <h3 id="medicamentoNome">Nome do Medicamento</h3>
-          <p id="medicamentoDescricao">Descrição do medicamento.</p>
-          <p id="medicamentoDisponibilidade">Disponibilidade: Em estoque</p>
-          <!-- Aqui você pode adicionar outros detalhes sobre o medicamento -->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-        </div>
-      </div>
     </div>
-  </div>
-  
 
-  
-<section class="container">
-    <!-- Swiper -->
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide ">
-                <div class="cad">
-                    <img class="img-card" src="./img/3.jpg" alt="remedio 1">
-                    <h2>Parecetamol</h2>
-                    <p>Analgésico e antitérmico.</p>
-                    <div class="card-footer">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
-                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
-                    Ver Disponibilidade
-                </button>                    
+
+
+    <section class="container">
+        <!-- Primeiro Swiper -->
+        <div class="swiper-container" id="swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/3.jpg" alt="remedio 1">
+                        <h2>Parecetamol</h2>
+                        <p>Analgésico e antitérmico.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/3.jpg" alt="remedio 1">
+                        <h2>Parecetamol</h2>
+                        <p>Analgésico e antitérmico.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/3.jpg" alt="remedio 1">
+                        <h2>Parecetamol</h2>
+                        <p>Analgésico e antitérmico.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/3.jpg" alt="remedio 1">
+                        <h2>Parecetamol</h2>
+                        <p>Analgésico e antitérmico.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/3.jpg" alt="remedio 1">
+                        <h2>Parecetamol</h2>
+                        <p>Analgésico e antitérmico.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (Outros slides do primeiro swiper) -->
+
             </div>
 
-            <div class="swiper-slide ">
-                <div class="cad">
-                    <img class="img-card" src="./img/3.jpg" alt="remedio 1">
-                    <h2>Amoxicilina</h2>
-                    <p>Antibióticos para infecções.</p>
-                    <div class="card-footer">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
-                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
-                    Ver Disponibilidade
-                </button>                    
-            </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="cad">
-                    <img class="img-card" src="./img/3.jpg" alt="remedio 1">
-                    
-                    <h2>Dipirona</h2>
-                    <p>Analgésico e antiespasmódica.</p>
-                    <div class="card-footer">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
-                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
-                    Ver Disponibilidade
-                </button>                    
-            </div>
-                </div>
-            </div>
-
-            <div class="swiper-slide">
-                <div class="cad">
-                    <img class="img-card" src="./img/3.jpg" alt="remedio 1">
-                    <h2>Losartana</h2>
-                    <p>Controlador de pressão arterial.</p>
-                    <div class="card-footer">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
-                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
-                    Ver Disponibilidade
-                </button>                     
-            </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="cad">
-                    <img class="img-card" src="./img/m2.png" alt="remedio 1">
-                    <h2>Losartana</h2>
-                    <p>Controlador de pressão arterial.</p>
-                    <div class="card-footer">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
-                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
-                    Ver Disponibilidade
-                </button>                           
-            </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="cad">
-                    <img class="img-card" src="./img/m2.png" alt="remedio 1">
-                    <h2>Losartana</h2>
-                    <p>Controlador de pressão arterial.</p>
-                    <div class="card-footer">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
-                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
-                    Ver Disponibilidade
-                </button>                           
-            </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="cad">
-                    <img class="img-card" src="./img/m2.png" alt="remedio 1">
-                    <h2>Losartana</h2>
-                    <p>Controlador de pressão arterial.</p>
-                    <div class="card-footer">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
-                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
-                    Ver Disponibilidade
-                </button>                           
-            </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="cad">
-                    <img class="img-card" src="./img/m2.png" alt="remedio 1">
-                    <h2>Losartana</h2>
-                    <p>Controlador de pressão arterial.</p>
-                    <div class="card-footer">
-                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDisponibilidade" 
-                        onclick="openModal('Parecetamol', 'Analgésico e antitérmico', 'Em estoque')">
-                    Ver Disponibilidade
-                </button>                           
-            </div>
-                </div>
-            </div>
+            <!-- Navegação do primeiro Swiper -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        
 
-        
+        <!-- Segundo Swiper (Novo Carrossel) -->
+        <div class="swiper-container" id="swiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/4.jpg" alt="remedio 2">
+                        <h2>Ibuprofeno</h2>
+                        <p>Analgésico e anti-inflamatório.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Ibuprofeno', 'Analgésico e anti-inflamatório', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/5.jpg" alt="remedio 3">
+                        <h2>Amoxicilina</h2>
+                        <p>Antibiótico para infecções bacterianas.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Amoxicilina', 'Antibiótico para infecções bacterianas', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/5.jpg" alt="remedio 3">
+                        <h2>Amoxicilina</h2>
+                        <p>Antibiótico para infecções bacterianas.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Amoxicilina', 'Antibiótico para infecções bacterianas', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/5.jpg" alt="remedio 3">
+                        <h2>Amoxicilina</h2>
+                        <p>Antibiótico para infecções bacterianas.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Amoxicilina', 'Antibiótico para infecções bacterianas', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="cad">
+                        <img class="img-card" src="./img/5.jpg" alt="remedio 3">
+                        <h2>Amoxicilina</h2>
+                        <p>Antibiótico para infecções bacterianas.</p>
+                        <div class="card-footer">
+                            <button class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#modalDisponibilidade"
+                                onclick="openModal('Amoxicilina', 'Antibiótico para infecções bacterianas', 'Em estoque')">
+                                Ver Disponibilidade
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- (Outros slides do segundo swiper) -->
+
+            </div>
+
+            <!-- Navegação do segundo Swiper -->
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
 
 
-        <!-- Optional: Add pagination or navigation -->
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-    </div>
-</section>
+
+
+
+
+
+
 
     <!-- footer -->
-
     <footer class="footer">
         <div class="itens-footer">
             <div class="busca">
                 <div class="med">
                     <img src="./img/busca.png" alt="">
                 </div>
-                <p>Encontre o que você precisa com facilidade: o site que conecta você aos melhores medicamentos, rápido e seguro!
+                <p>Encontre o que você precisa com facilidade: o site que conecta você aos melhores medicamentos, rápido
+                    e seguro!
                 </p>
             </div>
 
@@ -272,14 +375,14 @@
                 <p><a href="./index3.html">Sobre</a></p>
                 <p><a href="./index2.html">Contato</a></p>
             </div>
-            
+
 
             <div class="siga">
                 <h3>Siga-nos</h3>
                 <div class="redes">
                     <img width="48" height="48" src="https://img.icons8.com/fluency/48/facebook-new.png"
                         alt="facebook-new" /> <img width="48" height="48"
-                        src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new" /> 
+                        src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new" />
                 </div>
             </div>
 
@@ -299,13 +402,14 @@
 
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
-        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-        <script src="./js/swiper.js"></script>
-        <script src="./js/modal.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
+
 </html>
