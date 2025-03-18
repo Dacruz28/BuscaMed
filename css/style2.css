@@ -75,31 +75,14 @@ a.nav-link.active.bg-custom{
 }
  */
 
-section.img{
-    display: flex;
-    align-items: center;
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 50px;
-    padding-left: 20px;
-}
 
 
 section .container{
     width: 100%;
 }
 
-.img img{
-    width: 100%;
-    height: auto;
-}
 
-.itens{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 10px;
-}
+
 
 .itens p{
     transition: 0.5s;
@@ -171,52 +154,9 @@ section .container{
     color: #CD3333;
 }
 
-.cards{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 40px; 
-    align-items: center;
-    padding-top: 2%;
-    width: 100%;
-}
 
 
-.card1{
-    background-color: #ffffff ;
-    text-align: left;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;    
-    border-radius:10px;
-    border-left: 5px solid #FFD700;
-    line-height: 1.5rem;
-    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
 
-}
-
-.card2{
-    background-color: #ffffff ;
-    text-align: left;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    padding-left: 20px;
-    padding-right: 20px;
-    border-radius:10px;
-    border-left: 5px solid #CD3333;
-    line-height: 1.5rem;
-    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.1);
-}
-
-.botao{
-    width: 50%;
-    padding: 10px;
-    border-radius: 7px;
-    border:none;
-    color: #fff;
-    background-color: #CD3333;
-    margin-top: 10px;
-}
 
 @media (min-width: 1200px) {
     .cad{
@@ -439,4 +379,148 @@ button.btn2:hover {
     justify-content: space-around;
     width: 100%; 
     padding-top:20px;
+}
+
+
+
+
+/* contato */
+/* Estilo geral do container */
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);  /* Usando uma coluna única por padrão */
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1); /* Sombra sutil, mas visível */
+    background-color: #fff; /* Fundo branco para contrastar com a sombra */
+    flex-direction: column;
+    max-width: 1000px; /* Limita o tamanho máximo */
+    margin: 0 auto;
+    margin-top: 30px;
+    border-left: 6px solid#CD3333;
+    gap: 50px;
+}
+
+@media(max-width:991px){
+    .form-container{
+        grid-template-columns: repeat(1,1fr);  /* Usando uma coluna única por padrão */
+
+    }
+}
+
+/* Estilo da imagem */
+.form-container .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.form-container .img img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Estilo geral do formulário */
+form {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para os campos de entrada */
+.ent-cont {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.ent-cont-1 {
+    flex: 1;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Label */
+.ent-cont-1 label {
+    margin-bottom: 8px;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Inputs e Textarea */
+.ent-cont-1 input,
+.ent-cont-1 textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #333;
+    border: transparent;
+    border-bottom: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.ent-cont-1 input:focus,
+.ent-cont-1 textarea:focus {
+    border-color: #1f96da;
+    outline: none;
+    background-color: #fff;
+}
+
+.ent-cont-1 input::placeholder,
+.ent-cont-1 textarea::placeholder {
+    color: #aaa;
+}
+
+/* Botão de envio */
+.ent-cont-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btnCon {
+    background-color: #1f96da;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btnCon:hover {
+    background-color: #1591c3;
+    transform: translateY(-2px);
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 20px;
+    }
+
+    form {
+        padding: 20px;
+    }
+
+    .ent-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ent-cont-1 {
+        width: 100%;
+    }
+
+    .ent-cont-btn {
+        justify-content: center;
+    }
 }
