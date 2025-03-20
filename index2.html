@@ -21,26 +21,66 @@
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <form class="form1">
+                    <button class="lupa">
+                        <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                            aria-labelledby="search">
+                            <path d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                                stroke="currentColor" stroke-width="1.333" stroke-linecap="round"
+                                stroke-linejoin="round"></path>
+                        </svg>
+                    </button>
+                    <input class="input_nav" placeholder="O que deseja encontrar" required="" type="text">
+                    <button class="reset" type="reset">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </form>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav mx-auto d-flex" style="gap: 3rem;">
-                        <a class="nav-link" aria-current="page" href="./index.html">Catálogo</a>
-                        <a class="nav-link " href="index3.html">Sobre Nós</a>
-                        <a class="nav-link active bg-custom" href="./index2.html">Contato</a>
-                        <a class="nav-link a" href="#"><button class="btn_nav" data-bs-toggle="modal" data-bs-target="#welcomeModal">
-                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII=" alt="user">                        
-                            Boas-vindas! <br> Entrar ou Cadastrar
-                        </button></a>
+                    <div class="navbar-nav mx-auto d-flex">
+                        <a class="nav-link " aria-current="page" href="./index.html">Catálogo</a>
+                        <a class="nav-link" href="index3.html">Sobre Nós</a>
+                        <a class="nav-link" href="./index2.html">Contato</a>
+                        <a class="nav-link a" href="#"><button class="btn_nav" data-bs-toggle="modal"
+                                data-bs-target="#welcomeModal">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII="
+                                    alt="user">
+                                Boas-vindas! <br> Entrar ou Cadastrar
+                            </button></a>
+                        <!-- From Uiverse.io by satyamchaudharydev -->
+
                     </div>
                 </div>
-    
-                <!-- Botão Entrar ou Cadastrar -->
-                <div class="botao_nav">
-                    <button class="btn_nav" data-bs-toggle="modal" data-bs-target="#welcomeModal">
-                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII=" alt="user">                        
-                        Boas-vindas! <br> Entrar ou Cadastrar
-                    </button>
+                <div class="sla">
+                    <form class="form">
+                        <button>
+                            <svg width="17" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img"
+                                aria-labelledby="search">
+                                <path
+                                    d="M7.667 12.667A5.333 5.333 0 107.667 2a5.333 5.333 0 000 10.667zM14.334 14l-2.9-2.9"
+                                    stroke="currentColor" stroke-width="1.333" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </button>
+                        <input class="input" placeholder="O que deseja encontrar" required="" type="text">
+                        <button class="reset" type="reset">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </form>
+                    <!-- Botão Entrar ou Cadastrar -->
+                    <div class="botao_nav">
+                        <button class="btn_nav" data-bs-toggle="modal" data-bs-target="#welcomeModal">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAACA0lEQVR4nO2XO0sdURSFRxsNxkcwKGJ1C0FTmTKkMOkU09qKpknhC6OCilhK/oB5FCIogtr46LTSRpBbJEIeIFjZi1Zp1C9sZwk3aq5nHO+ZhMyC08yss9c358xrB0GqVLcLeAKMAbMao0BTkLSASmABOOe67Ng8UJEUXAWwJ5gVoAUo03gBrOncF6A8CUBbOdNIHo9ttWkuiXvOtnDFwbsOnAGNfujC0HGtTIuD96W8o37owlB7Uk0PHbzl8s74oQtDly0xcPeblgtL9XvgkkKLHLxF8i75oQtD3yu01sFbJ++0H7ow9LVCOx28XfJ2+aELQx8Bx8B+vpewXuYHwBFQ5Q1Q4T1amS2g5obztcC2PG+8wuVAvBPAie7Lbo0POmaaSgQuB/KVvrdX9RloD/4WARmgTSOTNE+qexFQArQCHX8Ydq4kCbCnwCe9327TkbzNPsAa9B0+z3lSh/Ks4LA8aM6i1SgEWDHwFvipoNUoK0K44pctgNUYtJr3BVcFbKr4d+BZjFrPgR+qtWFNV1y4ekFd/I0ApbEKBhc1HwAfVfObZdy10GMVsC3tjQt2VUC/an8FqoMo0m96VlfZF2lyBAEDyth1aR9yJ85p4kRQYAGTkVtT4BTYcfmljyu1BJZ1GmWS1yaHiE3YPwN4qIk+xmFUwMsn2Keyd9yAVKn+b/0Cc7EAX90GibIAAAAASUVORK5CYII="
+                                alt="user">
+                            Boas-vindas! <br> Entrar ou Cadastrar
+                        </button>
+                    </div>
                 </div>
-                
             </div>
         </nav>
     </header>

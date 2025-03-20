@@ -11,70 +11,283 @@ body {
 }
 
 
-.container_fluid{
-    display: flex;
-    justify-content: space-between;
-}
-.a{
-    text-decoration: none;
-}
+/* Navbar */
 
-.icone-inicial{
+
+.input_nav {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+.icone-inicial {
     width: 200px;
     height: 35px;  
 }
-.icone-segundario{
+
+.icone-segundario {
     width: 150px;
     height: 40px;  
     border-radius: 50px;
 }
 
-.bg-custom{
+.bg-custom {
     background-color: #CD3333;
 }
-.container_fluid{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    width: 90%;
-}
 
-
-a.nav-link{
+a.nav-link {
     color: #ccc;
     font-size: 1.1rem;
     font-weight: bold;
     transition: 0.3s;
+    font-family: "Poppins", serif;
 }
-a.nav-link:hover{
+
+a.nav-link:hover {
     font-size: 1.3rem;
     color: #fff;
 }
 
-
-a.nav-link.active.bg-custom{
+a.nav-link.active.bg-custom {
     color: #fff;
     border-bottom: 2px solid #fff;
 }
-.navText{
-    color: #fff;
+
+.sla {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
 }
 
-.icone_nav{
-    width: 35px;
-    height: 35px;
+/* Estilo padrão para .navbar-nav */
+.navbar-nav {
+    gap: 3rem; /* Valor original */
 }
 
-.navbar-expand-lg .navbar-nav{
+/* Search */
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+}
+
+/* Estilização do container do input */
+.form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #3042df;
+    --border-radius: 10px;
+    --after-border-radius: 10px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
     display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg, #fff);
     width: 100%;
-    justify-content: space-around;
+}
+
+/* Estilização do input */
+.input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+
+/* Estilização da borda animada */
+.form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 100px;
+    transition: transform var(--timing) ease;
+}
+
+/* Hover do input */
+.form:focus-within {
+    border-radius: var(--after-border-radius);
+}
+
+input:focus {
+    outline: none;
+}
+
+/* Código da borda animada */
+.form:focus-within:before {
+    transform: scale(1);
+}
+
+/* Estilização do botão de reset */
+.reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Exibição do botão de reset quando o texto está sendo digitado */
+input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Tamanho dos ícones SVG */
+.form svg {
+    width: 17px;
+    margin-top: 3px;
+}
+
+/* Estilização da lupa */
+.lupa {
+    border: none;
+    background: none;
+    color: #9595AE;
+}
+
+/* Botões da navbar */
+button.btn_nav {
+    display: flex !important;
+    gap: 10px;
+    font-size: 13px;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    text-align: start;
+    padding-left: 5px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 8px;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", serif;
+}
+
+button.btn_nav:hover {
+    background-color: #b42121;
+}
+
+    .form1 {
+        --timing: 0.3s;
+        --width-of-input: 200px;
+        --height-of-input: 40px;
+        --border-height: 2px;
+        --input-bg: #fff;
+        --border-color: #3042df;
+        --border-radius: 10px;
+        --after-border-radius: 10px;
+        position: relative;
+        width: var(--width-of-input);
+        height: var(--height-of-input);
+        display: flex;
+        align-items: center;
+        padding-inline: 0.8em;
+        border-radius: var(--border-radius);
+        transition: border-radius 0.5s ease;
+        background: var(--input-bg,#fff);
+        width: 100%;
+    }
+
+    /* styling of animated border */
+    .form1:before {
+        content: "";
+        position: absolute;
+        background: var(--border-color);
+        transform: scaleX(0);
+        transform-origin: center;
+        width: 100%;
+        height: var(--border-height);
+        left: 0;
+        bottom: 0;
+        border-radius: 100px;
+        transition: transform var(--timing) ease;
+    }
+    /* Hover on Input */
+    .form1:focus-within {
+        border-radius: var(--after-border-radius);
+    }
+
+
+@media (max-width: 991px) {
+    .botao_nav {
+        display: none;
+    }
+}
+
+/* Responsividade para a navbar */
+@media (max-width: 991px) {
+    .botao_nav {
+        display: none;
+    }
+    .sla {
+        display: none;
+    }
+    .form1 {
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 991px) {
+    .nav-link.a {
+        display: none;
+    }
+
+    .form1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1048px) {
+    .navbar-nav {
+        gap: 1rem; /* Novo valor de gap para telas menores ou iguais a 1048px */
+    }
+    .sla {
+        width: 40%;
+    }
+}
+
+    
+@media (min-width: 991px) {
+    .nav-link.a{
+        display: none;
+    }
+
 }
 
 
+@media (max-width: 991px) {
+    
+    
 
+    .ms-auto.a{
+        display: none;
+    }
+
+
+    .botao_nav{
+        display: none;
+    }
+        
+
+}
 
 
 
@@ -136,7 +349,7 @@ label {
     display: block;
 }
 
-input[type="text"], input[type="password"], input[type="date"] {
+ input[type="password"], input#email {
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -249,13 +462,8 @@ input[type="button"]{
         display: block; /* Garante que a imagem será exibida */
         margin: 0 auto; /* Centraliza a imagem na navbar */
     }
-    .navbar-toggler {
-        display: none; 
-    }
-    
-    .navbar-collapse {
-        display: flex !important; /* Garante que a navbar esteja sempre visível */
-    }
+
+
     .cadastre{
         display: none;
     }
@@ -294,4 +502,159 @@ input[type="button"]{
 
 .botao_voltar:hover{
     background-color: #ddd;
+}
+
+
+
+
+
+   /* modal */
+
+   .modal-dialog {
+    position: fixed !important;
+    top: 0;
+    right: 20px;
+    margin: 0;
+    height: 70vh !important;
+    width: 350px !important; /* Largura do modal definida */
+}
+
+
+
+.modal-content {
+    height: 100%; /* Faz o conteúdo do modal ocupar toda a altura do modal */
+    border-radius: 15px !important; /* Remove bordas arredondadas */
+
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+button.btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #CD3333;
+    color: #fff;
+    border: #CD3333;
+}
+
+button.btn2 {
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #000;
+    border: 0.5px solid #666;
+}
+
+button.btn:hover {  
+    background-color: #b42121;
+    color: #fff;
+}
+
+button.btn2:hover {
+    background-color: #e1e1e1;
+}
+
+.content_modal{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.modal_title{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.modal_sub{
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+
+}
+
+.itens{
+    display: none;
+}
+.img-icones{
+    display: none;
+}
+
+
+.modal-header .btn-close:hover{
+    background-color: #b42121;
+}
+
+
+.modal-header{
+    background-color: #CD3333;
+}
+
+
+
+.content_modal{
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.modal_title{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.modal_sub{
+    font-size: 14px;
+    color: #555;
+    text-align: center;
+
+}
+
+@media (max-width: 991px){
+    .botao_nav{
+        display: none;
+    }
+    .sla{
+        display: none;
+    }
+    .form1{
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 991px) {
+    .nav-link.a{
+        display: none;
+    }
+    .form1{
+        display: none;
+    }
+
+}
+
+
+@media (max-width: 1098px) {
+    .icone-inicial{
+        width: 150px;
+        height: 25px;  
+    }
+
+}
+
+/* Responsividade para telas com largura máxima de 1048px */
+@media (max-width: 1048px) {
+    .navbar-nav {
+        gap: 1rem; /* Novo valor de gap para telas menores ou iguais a 1048px */
+    }
+    .sla{
+        width: 40%;
+    }
 }
